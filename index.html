@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Equipamentos</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Equipamentos</h1>
+        <form id="equipment-form">
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="site">Site</label>
+                <select id="site" name="site" required>
+                    <option value="agudos">Agudos</option>
+                    <option value="inno">Inno</option>
+                    <option value="marilia">Marília</option>
+                    <option value="matriz">Matriz</option>
+                    <option value="np1">Np1</option>
+                    <option value="np2">Np2</option>
+                    <option value="np4">Np4</option>
+                    <option value="npaa">Npaa</option>
+                    <option value="pascc">Pascc</option>
+                    <option value="people">People</option>
+                    <option value="ribeirao">Ribeirão</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="local">Local</label>
+                <select id="local" name="local" required>
+                    <option value="1-subsolo">1º Subsolo</option>
+                    <option value="2-subsolo">2º Subsolo</option>
+                    <option value="terreo">Térreo</option>
+                    <option value="andar">1º Andar até 5º Andar</option>
+                    <option value="mesanino">Mesanino 1 até Mesanino 5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ambiente">Ambiente</label>
+                <select id="ambiente" name="ambiente" required>
+                    <option value="datacenter">Datacenter</option>
+                    <option value="sala-tecnica">Sala Técnica</option>
+                    <option value="operacao">Operação</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="temperatura">Temperatura</label>
+                <input type="number" id="temperatura" name="temperatura" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="rack">Rack</label>
+                <select id="rack" name="rack" required>
+                    <option value="rack-a">Rack A</option>
+                    <option value="rack-b">Rack B</option>
+                    <option value="rack-c">Rack C</option>
+                    <option value="rack-d">Rack D</option>
+                    <option value="rack-e">Rack E</option>
+                    <option value="rack-f">Rack F</option>
+                    <option value="rack-g">Rack G</option>
+                    <option value="rack-h">Rack H</option>
+                    <option value="rack-i">Rack I</option>
+                    <option value="rack-j">Rack J</option>
+                    <option value="rack-k">Rack K</option>
+                    <option value="rack-l">Rack L</option>
+                    <option value="rack-m">Rack M</option>
+                    <option value="rack-n">Rack N</option>
+                    <option value="rack-o">Rack O</option>
+                    <option value="rack-p">Rack P</option>
+                    <option value="rack-q">Rack Q</option>
+                    <option value="rack-r">Rack R</option>
+                    <option value="rack-s">Rack S</option>
+                    <option value="rack-t">Rack T</option>
+                    <option value="rack-u">Rack U</option>
+                    <option value="rack-v">Rack V</option>
+                    <option value="rack-core">Core</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numero-serie">Nº Série</label>
+                <input type="text" id="numero-serie" name="numero-serie" required>
+            </div>
+            <div class="form-group">
+                <label for="autonomia">Autonomia</label>
+                <input type="number" id="autonomia" name="autonomia" required>
+            </div>
+            <div class="form-group">
+                <label for="equipamento">Equipamento</label>
+                <select id="equipamento" name="equipamento" required>
+                    <option value="condicionador-ar">Condicionador de Ar</option>
+                    <option value="firewall">Firewall</option>
+                    <option value="nobreak">Nobreak</option>
+                    <option value="servidor">Servidor</option>
+                    <option value="storage">Storage</option>
+                    <option value="switch">Switch</option>
+                    <option value="unified-media-server">Unified Media Server</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="preenchido-por">Preenchido por</label>
+                <input type="text" id="preenchido-por" name="preenchido-por" required>
+            </div>
+            <div class="form-group">
+                <label for="observacao">Observação</label>
+                <textarea id="observacao" name="observacao"></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" id="save-btn">Salvar</button>
+                <button type="reset" id="cancel-btn">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+    
+
+</body>
+</html>
+
