@@ -70,3 +70,14 @@ button[type="reset"] {
     color: white;
 }
 
+.atrasado {
+    color: red;
+    font-weight: bold;
+}
+
+.em-dia {
+    color: green;
+    font-weight: bold;
+}
+
+
