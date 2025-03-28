@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Checklist</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="consultar-page">
+    <div class="container">
+        <h2>Consultar Checklist</h2>
+        <form id="consultaForm">
+            <label for="consultaData">Data:</label>
+            <input type="date" id="consultaData" class="campo">
+           
+            <label for="consultaSite">Site:</label>
+            <select id="consultaSite">
+                <option>Selecione um Site</option>
+                <option>Predio 1</option>
+                <option>Predio 2</option>
+                <option>Predio 3</option>
+                <option>Predio 4</option>
+                <option>Predio 5</option>
+                <option>Predio 6</option>
+                <option>Predio 7</option>
+                <option>Predio 8</option>
+                <option>Predio 9</option>
+                <option>Predio 10</option>
+                <option>Predio 11</option>
+            </select>
+           
+            <button type="submit">Pesquisar</button>
+        </form>
+        <div class="table-responsive">
+            <table id="resultados">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Site</th>
+                        <th>Local</th>
+                        <th>Ambiente</th>
+                        <th>Temperatura</th>
+                        <th>Rack</th>
+                        <th>Nº Serie</th>
+                        <th>Autonomia</th>
+                        <th>Equipamento</th>
+                        <th>Preenchido Por</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

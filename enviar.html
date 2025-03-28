@@ -1,0 +1,120 @@
+<!-- enviar.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Checklist</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container-enviar">
+        <h2>Enviar Checklist</h2>
+        <form id="checklistForm">
+            <label for="data">Data:</label>
+            <input type="date" id="data" class="campo" required>
+           
+            <label for="site">Site:</label>
+            <select id="site">
+                <option>Selecione um Site</option>
+                <option>Predio 1</option>
+                <option>Predio 2</option>
+                <option>Predio 3</option>
+                <option>Predio 4</option>
+                <option>Predio 5</option>
+                <option>Predio 6</option>
+                <option>Predio 7</option>
+                <option>Predio 8</option>
+                <option>Predio 9</option>
+                <option>Predio 10</option>
+                <option>Predio 11</option>
+            </select>
+ 
+            <label for="local">Local:</label>
+            <select id="local">
+                <option>Selecione um local</option>
+                <option>1º Subsolo</option>
+                <option>2º Subsolo</option>
+                <option>Térreo</option>
+                <option>1º Andar</option>
+                <option>2º Andar</option>
+                <option>3º Andar</option>
+                <option>4º Andar</option>
+                <option>5º Andar</option>
+                <option>Mesanino 1</option>
+                <option>Mesanino 2</option>
+                <option>Mesanino 3</option>
+                <option>Mesanino 4</option>
+                <option>Mesanino 5</option>
+            </select>
+ 
+            <label for="ambiente">Ambiente:</label>
+            <select id="ambiente">
+                <option>Selecione um Ambiente</option>
+                <option>Datacenter</option>
+                <option>Sala Técnica</option>
+                <option>Operação</option>
+            </select>
+           
+            <label for="temperatura">Temperatura:</label>
+            <input type="text" id="temperatura" class="campo" required>
+ 
+            <label for="rack">Rack:</label>
+            <select id="rack">
+                <option>Selecione um Rack</option>
+                <option>Core</option>
+                <option>Rack A</option>
+                <option>Rack B</option>
+                <option>Rack C</option>
+                <option>Rack D</option>
+                <option>Rack E</option>
+                <option>Rack F</option>
+                <option>Rack G</option>
+                <option>Rack H</option>
+                <option>Rack I</option>
+                <option>Rack J</option>
+                <option>Rack K</option>
+                <option>Rack L</option>
+                <option>Rack M</option>
+                <option>Rack N</option>
+                <option>Rack O</option>
+                <option>Rack P</option>
+                <option>Rack Q</option>
+                <option>Rack R</option>
+                <option>Rack S</option>
+                <option>Rack T</option>
+                <option>Rack U</option>
+                <option>Rack V</option>
+            </select>
+ 
+            <label for="numero">Nº Serie:</label>
+            <input type="text" id="numero" class="campo" required>
+ 
+            <label for="autonomia">Autonomia:</label>
+            <input type="text" id="autonomia" class="campo" required>
+ 
+            <label for="equipamento">Equipamento:</label>
+            <select id="equipamento">
+                <option>Selecione um Equipamento</option>
+                <option>Condicionador de Ar</option>
+                <option>Firewall</option>
+                <option>Nobreak</option>
+                <option>Servidor</option>
+                <option>Storage</option>
+                <option>Switch</option>
+                <option>Unified Media Server</option>
+            </select>
+           
+            <label for="preenchido">Preenchido Por:</label>
+            <input type="text" id="preenchido" class="campo" required>
+ 
+            <label for="observacao">Observação:</label>
+            <textarea id="observacao"></textarea>
+           
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="location.href='index.html'">Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>
